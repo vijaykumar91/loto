@@ -1,1 +1,1 @@
-web: gunicorn algorithms:loto1
+web: gunicorn algorithms:app
