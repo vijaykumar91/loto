@@ -31,7 +31,7 @@ def analysis():
     getInput.append(five)
     getInput.append(six)
     print('first==>>',(getInput))
-    loc = (r'C:\Users\RELIANCE DIGITAL\PycharmProjects\loto\5_16_read_excel.xlsx')  # write URL path
+    loc = (r'5_16_read_excel.xlsx')  # write URL path
     wb = xlrd.open_workbook(loc)
     sheet = wb.sheet_by_index(0)
 
