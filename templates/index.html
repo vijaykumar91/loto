@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<style>
+    /*set border to the form*/
+
+    form {
+        border: 3px solid #f1f1f1;
+    }
+    /*assign full width inputs*/
+
+
+    /*set a style for the buttons*/
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    /* set a hover effect for the button*/
+
+    button:hover {
+        opacity: 0.8;
+    }
+    /*set extra style for the cancel button*/
+
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+    }
+    /*centre the display image inside the container*/
+
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+    /*set image properties*/
+
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+    }
+    /*set padding to the container*/
+
+    .container {
+        padding: 16px;
+    }
+    /*set the forgot password text*/
+
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+    /*set styles for span and cancel button on small screens*/
+
+    @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+        .cancelbtn {
+            width: 100%;
+        }
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body>
+
+    <h2 style="text-align:center">Loto Analysis</h2>
+    <!--Step 1 : Adding HTML-->
+    <form action="/analysis" method="post" onsubmit="validationFunction()">
+        <div class="imgcontainer">
+
+        </div>
+
+        <div class="container">
+            <label><b>First Number</b></label>
+            <input type="number" style="width:50px; padding:10px 10px;" placeholder="First No" name="first" id="first" required>
+<label><b>Second Number</b></label>
+            <input type="number" style="width:50px; padding:10px 10px;" placeholder="Second No" name="second" id="second"required>
+
+            <label><b>Third Number</b></label>
+            <input type="number" style="width:50px; padding:10px 10px;" placeholder="Third No" name="third" id="third"required>
+
+             <label><b>Fourth Number</b></label>
+            <input type="number" style="width:50px; padding:10px 10px;" placeholder="Fourth No" name="fourth" id="fourth" required>
+
+               <label><b>Five Number</b></label>
+            <input type="number" style="width:50px; padding:10px 10px;" placeholder="Five No" name="five" id="five" required>
+
+               <label><b>Six Number</b></label>
+            <input type="number" style="width:50px; padding:10px 10px;" placeholder="Six No" name="six" id="six" required>
+
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
+
+<script>
+  function validationFunction(){
+          var first=$('#first').val()
+          var second=$('#first').val()
+          var third=$('#first').val()
+          var fourth=$('#first').val()
+          var fifth=$('#first').val()
+          var six=$('#first').val()
+
+  }
+</script>
